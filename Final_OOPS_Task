@@ -1,0 +1,40 @@
+
+abstract class V{
+public abstract void move();
+private str brand;
+private int speed;
+public void setbrand(str _brand){
+brand = _brand;
+}
+public str getbrand(){
+return brand;
+}
+public void setspeed(int _speed){
+speed = _speed;
+}
+public int getspeed(){
+return speed;
+}
+}
+class Car extends V{
+public void move(){
+info("The Car of brand %1 is moving at speed %2",getbrand(),getspeed());
+}
+}
+class Bike extends V{
+public void move(){
+info("The bike of brand %1 is moving at speed %2",getbrand(),getspeed());
+}
+}
+static void job(Args _args){
+V v;
+v= new Car();
+v.setbrand("Honda");
+v.setspeed(100);
+v.move();
+v= new Bike();
+v.setbrand("Yamaha");
+v.setspeed(80);
+v.move();
+}
+
