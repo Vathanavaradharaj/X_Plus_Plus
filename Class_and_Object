@@ -1,0 +1,10 @@
+Class Car
+{
+public void drive(){
+info("The car is moving?");
+}
+}
+static void job(Args_args){
+Car hello=new Car();
+hello.drive();
+}
