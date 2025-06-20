@@ -1,0 +1,22 @@
+
+abstract class Animal{
+public abstract void sound();
+}
+class Dog extends Animal{
+public void sound(){
+info("bow");
+}
+}
+class Cat extends Animal{
+public void sound(){
+info("meow");
+}
+}
+static void job(Args _args){
+Animal a;
+a = new Dog();
+a.sound();
+a= new Cat();
+a.sound();
+}
+
