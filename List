@@ -1,0 +1,15 @@
+class Listt
+{
+static void job(Args_args){
+List mark = new List(type::int);
+mark.add(100);
+mark.add(10);
+mark.add(1);
+ListEnumerator m= mark.getEnumerator();
+int i=1;
+while(m.moveNext()){
+info(strFmt("Mark %1: %2", i, m.current()));
+i++
+}
+}
+}
