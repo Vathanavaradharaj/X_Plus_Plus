@@ -1,0 +1,19 @@
+class sett{
+static void job(){
+set a = new set(Types::string);
+setIterator c =a.setIterator();
+a.add("Carrot");
+a.add("Beans");
+a.add("Brinjal");
+int b[3];
+b[1]=6;
+b[2]=5;
+b[3]=7;
+int i=1;
+while(c.more()){
+info(strFmt("%1 - %2",c.value(),b[i]));
+c.next();
+i++;
+}
+}
+}
