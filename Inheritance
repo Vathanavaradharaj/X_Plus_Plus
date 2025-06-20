@@ -1,0 +1,40 @@
+Class Employee{
+public void work(){
+info("Employee is working");
+}
+}
+class Developer extends Employee{
+public void code(){
+info("Developer is coding");
+}
+}
+static void job(Args_args){
+Developer d = new Developer();
+d.work();
+d.code();
+}
+class Person
+{
+private str name;
+private int age;
+public void new(str _name, int _age)
+{
+name = _name;
+age = _age;
+info(strFmt("Person Created: %1 (%2)", name, age));
+}
+}
+class Student extends Person
+{
+private str studentId;
+public void new(str _name, int _age, str _id)
+{
+super(_name, _age); 
+studentId = _id;
+info(strFmt("Student enrolled: %1", studentId));
+}
+}
+static void job(Args _args)
+{
+Student s = new Student("Vathana", 20, "STU1001");
+}
