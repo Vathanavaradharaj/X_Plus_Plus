@@ -1,0 +1,23 @@
+
+class Shape{
+public void draw(){
+}
+}
+class C extends Shape{
+public void draw(){
+info("Drawing a circle");
+}
+}
+class S extends Shape{
+public void draw(){
+info("Drawing a square");
+}
+}
+static void job(Args_args){
+Shape a;
+a=new C();
+a.draw();
+a=new S();
+a.draw(); 
+}
+
