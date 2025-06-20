@@ -1,0 +1,15 @@
+class Map{
+static void Job(Args_args)
+{
+Map hello= new Map(Types::int, Types::string);
+hello.insert(1,"Tomato");
+hello.insert(2,"Potato");
+hello.insert(3,"Onion");
+MapEnumerator h=hello.getEnumerator();
+int key;
+while(h.moveNext()){
+key = h.currentKey();
+info(strFmt("Product ID: %1, Name: %2",key, hello.lookup(key)));
+}
+}
+}
