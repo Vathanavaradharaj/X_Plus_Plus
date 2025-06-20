@@ -1,4 +1,4 @@
-class Map{
+class Mapp{
 static void Job(Args_args)
 {
 Map hello= new Map(Types::int, Types::string);
