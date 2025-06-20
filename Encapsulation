@@ -1,0 +1,24 @@
+
+Class Bank{
+private str acc;
+public void setacc(str _name){
+name = _name;
+}
+public str getacc(){
+return name;
+}
+private int bal;
+public void setbal(int _balance){
+balance = _balance;
+}
+public int getbal(){
+return balance;
+}
+}
+static void bankacc(Args_args){
+Bank b=new Bank();
+b.setacc("Vathana");
+b.setbal(5000);
+info(strFmt("Account holder: "+"%1 \n Balance : "+"%2",b.getacc(),b.getbal()));
+}
+
