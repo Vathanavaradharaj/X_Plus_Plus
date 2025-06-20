@@ -1,0 +1,15 @@
+
+Class Cal{
+public int add(int a, int b){
+return a+b;
+}
+public int add(int a,int b,int c){
+return a+b+c;
+}
+}
+static void job(Args_args){
+Cal a = new Cal();
+info(int2str(a.add(10,20)));
+info(int2str(a.add(10,20,30)));
+}
+
