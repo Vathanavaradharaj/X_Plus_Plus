@@ -1,0 +1,32 @@
+class Test{
+static void job(Args _args){
+//create and insert
+StudentTable student;
+student.RollNo=57;
+student.Name="vathana";
+student.Course="BCA";
+student.insert();
+//select
+select firstOnly student where student.RollNo==57;
+info(strFmt("%1,%2",student.Name,student.Course));
+//update
+select forUpdate student where student.RollNo==57;
+if(student.RecId !=0){
+student.Course="Computer Applications";
+student.update();
+info("record updated");
+}
+else{
+info("404");
+}
+//delete
+select forUpdate student where student.RollNo==57;
+if(student.RecId!=0){
+student.delete();
+info("deleted");
+}
+else{
+info("404");
+}
+}
+}
