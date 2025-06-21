@@ -38,7 +38,7 @@ X++ is a niche yet powerful language used in Microsoft Dynamics AX. Since it was
 | Inheritance         | ✅ Done     |
 | Polymorphism        | ✅ Done     |
 | Abstraction         | ✅ Done     |
-| Final OOP Project   | ✅ Completed |
+| Final OOP          | ✅ Completed |
 | CURD                | ✅ Completed |
 | Collections         | ✅ Completed |
 | Forms & More  | 🚧 In Progress |
