@@ -14,20 +14,6 @@ X++ is a niche yet powerful language used in Microsoft Dynamics AX. Since it was
 
 ---
 
-## ✨ What’s Inside
-
-- ✅ Basic syntax (variables, loops, conditionals)
-- ✅ Full coverage of OOP principles in X++:
-  - Encapsulation
-  - Inheritance
-  - Polymorphism
-  - Abstraction
-- ✅ Self-debugged code blocks with simulated compiler feedback
-- 🧩 Final OOP mini-project: Vehicle simulation
-- 🔁 Continuous updates as I learn more (collections, exceptions, etc.)
-
----
-
 ## 📌 Status
 
 | Topic               | Status     |
