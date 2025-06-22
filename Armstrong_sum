@@ -1,0 +1,29 @@
+
+class amp{
+public real val(int num){
+int count = strLen(int2str(num));
+real sum =0;
+int temp = num;
+int dig ;
+while(temp != 0){
+dig=temp % 10;
+sum +=power(dig,count);
+temp /= 10;
+}
+info(sum);
+return  sum;
+}
+}
+static void job(Args _args){
+Dialog a = new Dialog("Enter Details");
+DialogField number;
+int num;
+number = a.addField(ExtendedTypeStr(Integer),"Number");
+if(a.run()){
+num = number.value();
+}
+amp b = new amp();
+b.val(num);
+}
+
+
