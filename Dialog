@@ -1,0 +1,25 @@
+class CustomerDiscount{
+public real discount(str Name,real Amount, int Discount ){
+real Dis = Amount*Discount/100;
+Amount -= Dis;
+info(strFmt("amt %1", Amount));
+return Amount;
+}
+}
+static void job(Args _args){
+Dialog a = new Dialog("enter the deatils");
+DialogField N, A, D;
+str Name;
+real Amount;
+int Discount;
+N = a.addField(ExtendedTypeStr(String),"name");
+A = a.addField(ExtendedTypeStr(AmountCur),"amount");
+D= a.addField(ExtendedTypeStr(Integer),"discount");
+if(a.run()){
+ Name =N.value();
+ Amount = A.value();
+Discount = D.value();
+}
+CustomerDiscount b = new CustomerDiscount();
+b.discount(Name,Amount,Discount);
+}
