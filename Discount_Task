@@ -1,0 +1,41 @@
+class Purchase{
+public void cal(str nname ,real aamount){
+int points;
+real dis;
+int D;
+if(aamount>10000){
+points=100;
+D=10;
+dis = aamount * D/ 100;
+}
+else if(aamount>5000 && aamount<10000){
+points=50;
+D=5;
+dis = aamount * D/ 100;
+}
+else if(aamount<5000){
+dis =0;
+D=0;
+points=0;
+}
+else{
+info("NaN");
+}
+info(strFmt("Name: %1 \n Amount: %2 \n Discount: %3 \n Points: %4 \n FinalAmount: %5",nname, aamount , D, points, (aamount-dis)));
+}
+}
+static void job(Args _args){
+Dialog a = new Dialog("Enter the details");
+DialogField name , amount;
+str nname;
+real aamount;
+name = a.addField(ExtendedTypeStr(String),"name");
+amount = a.addField(ExtendedTypeStr(AmountCur),"amount");
+if(a.run()){
+nname = name.value();
+aamount = amount.value();
+Purchase p = new Purchase();
+p.cal(nname,aamount);
+}
+}
+
